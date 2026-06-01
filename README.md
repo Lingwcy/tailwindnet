@@ -26,18 +26,16 @@ We use [MMSegmentation v1.1.2](https://github.com/open-mmlab/mmsegmentation/tree
 
 For install and data preparation, please refer to the guidelines in [MMSegmentation v1.1.2](https://github.com/open-mmlab/mmsegmentation/tree/v1.1.2).
 
-Other requirements:
-```pip install timm==0.3.2```
-
 An example (works for me): ```CUDA 12.8``` and  ```torch 2.8.0+cu1281``` 
 
 ```
 pip install torchvision==0.23.0+cu128
-pip install timm==1.0.22
 pip install mmcv==2.2.0
-pip install opencv-python==4.12.0.88
 pip install -r requirements.txt
+pip install -e .
 ```
+
+Before training or evaluation, update `data_root` in `configs/_base_/datasets/uavm.py` or `configs/_base_/datasets/mfnet.py` to your local dataset path.
 
 ## Evaluation
 
@@ -67,16 +65,15 @@ python tools/train.py configs\taillwindNet\tailwindv6_b0_1xb8-40k_uavm-512x512.p
 Here is a demo script to test a single image. More details refer to [MMSegmentation's Doc](https://mmsegmentation.readthedocs.io/en/latest/get_started.html).
 
 ```shell
-python demo/image_demo.py ${IMAGE_FILE} ${CONFIG_FILE} ${CHECKPOINT_FILE} [--device ${DEVICE_NAME}] [--palette-thr ${PALETTE}]
+python demo/image_demo.py ${IMAGE_FILE} ${CONFIG_FILE} ${CHECKPOINT_FILE} [--device ${DEVICE_NAME}] [--out-file ${OUT_FILE}]
 ```
 
 Example: visualize ```Tailwind-B0``` on ```MPS```: 
 
 ```shell
 python demo/image_demo.py demo/demo.png configs\taillwindNet\tailwindv6_b0_1xb8-40k_uavm-512x512.py \
-/path/to/checkpoint_file --device cuda:0 --palette mps
+/path/to/checkpoint_file --device cuda:0 --out-file result.png
 ```
-
 
 
 

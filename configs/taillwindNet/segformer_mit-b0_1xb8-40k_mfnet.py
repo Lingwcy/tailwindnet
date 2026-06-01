@@ -9,7 +9,7 @@ norm_cfg = dict(type='SyncBN', requires_grad=True)
 randomness = dict(seed=42, diff_rank_seed=False)
 
 custom_imports = dict(
-    imports=['custom_transforms', 'custom_metrics', 'custom_modules'],
+    imports=['mmseg_plugin', 'custom_transforms', 'custom_metrics', 'custom_modules'],
     allow_failed_imports=False,
 )
 

@@ -20,6 +20,7 @@ setup(
     author='TailwindNet authors',
     license='Apache License 2.0',
     packages=find_packages(exclude=('configs', 'tools', 'resources', 'resources.*')),
+    py_modules=['custom_transforms', 'custom_metrics', 'custom_modules'],
     include_package_data=True,
     python_requires='>=3.8',
     install_requires=[

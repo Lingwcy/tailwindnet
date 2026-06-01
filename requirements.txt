@@ -7,3 +7,5 @@ einops
 antialiased-cnns
 timm
 numpy
+opencv-python
+prettytable

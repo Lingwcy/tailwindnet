@@ -3,6 +3,10 @@ _base_ = [
     '../_base_/default_runtime.py',
     '../_base_/schedules/schedule_80k.py',
 ]
+custom_imports = dict(
+    imports=['mmseg_plugin', 'custom_transforms'],
+    allow_failed_imports=False,
+)
 
 crop_size = (512, 512)
 norm_cfg = dict(type='SyncBN', requires_grad=True)

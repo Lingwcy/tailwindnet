@@ -5,7 +5,7 @@ _base_ = [
 ]
 
 custom_imports = dict(
-    imports=['custom_transforms'],
+    imports=['mmseg_plugin', 'custom_transforms'],
     allow_failed_imports=False,
 )
 
