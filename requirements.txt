@@ -1,0 +1,9 @@
+torch>=1.13
+torchvision
+mmengine>=0.7
+mmcv>=2.0.0
+mmsegmentation>=1.0
+einops
+antialiased-cnns
+timm
+numpy
