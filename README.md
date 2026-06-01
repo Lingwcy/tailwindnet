@@ -1,6 +1,6 @@
-![SMU](https://img.shields.io/badge/Southwest%20Minzu%20University-8A2BE2)
+<!-- ![SMU](https://img.shields.io/badge/Southwest%20Minzu%20University-8A2BE2) -->
 ![Python 3.9.25](https://img.shields.io/badge/python-3.9.25-green.svg)
-
+![MMSEG](https://img.shields.io/badge/MMsegmentaion-8A2BE2)
 
 # TailWindNet
 
