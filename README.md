@@ -42,7 +42,7 @@ Before training or evaluation, update `data_root` in `configs/_base_/datasets/ua
 Download `trained weights`. 
 (
 [Google Drive[coming soon]](https://drive.google.com/drive/folders/1GAku0) | 
-[Quark](https://pan.quark.cn/s/4cdf95e85928)code：4ifc
+[Quark](https://pan.quark.cn/s/4cdf95e85928) | code：4ifc
 )
 
 Example: evaluate ```Tailwind-B0``` on ```MPS```:
