@@ -39,7 +39,7 @@ Before training or evaluation, update `data_root` in `configs/_base_/datasets/ua
 
 ## Evaluation
 
-Download `trained weights`. 
+Download `trained weights` and MPS dataset. 
 (
 [Google Drive[coming soon]](https://drive.google.com/drive/folders/1GAku0) | 
 [Quark](https://pan.quark.cn/s/4cdf95e85928) | code：4ifc
